@@ -8,6 +8,12 @@ on:
 jobs: 
   greet:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
     steps:
       - name: Say hello
-        run: echo 'hello world'
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          run: echo 'hello world'
