@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run onliner
+      - name: Run one liner
         run: echo "hello"
