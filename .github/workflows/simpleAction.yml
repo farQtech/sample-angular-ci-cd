@@ -9,4 +9,6 @@ jobs:
 
     steps:
       - name: Run one liner
-        run: echo "hello"
+        run: npm ci
+      - name: run test
+        run: npm run test
