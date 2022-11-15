@@ -1,8 +1,5 @@
 name: greet
 on:
-  push:
-    branches:
-      - master
   schedule:
   - workflow_dispatch
 jobs:
