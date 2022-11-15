@@ -1,0 +1,15 @@
+name: Angular GitHub CI
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - workflow_dispatch
+jobs: 
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo 'hello world'
+
+  
