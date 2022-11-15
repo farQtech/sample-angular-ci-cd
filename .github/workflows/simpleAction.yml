@@ -1,15 +1,15 @@
-name: Angular GitHub CI
+name: greet
 on:
   push:
     branches:
       - master
   schedule:
-    - workflow_dispatch
-jobs: 
-  greet:
+  - workflow_dispatch
+jobs:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
-      - name: say hello
-        run: echo hello world!
+      - name: Run onliner
+        run: echo hello
